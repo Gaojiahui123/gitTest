@@ -1,7 +1,5 @@
-@echo off
-@title bat execute git auto commit
-G:
 cd G:\gitTest
+send=`date '+%Y-%m-%d %H:%M:%S'`
 git add .
-git commit -m "005"
+git commit -m send
 git push
